@@ -7,7 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PerfilComponent implements OnInit {
 
-  constructor() { }
+  private perfilInfo: any[];
+  constructor() {
+    this.perfilInfo=[];
+    this.perfilInfo.push("Soy una persona responsable, autodidacta y adapatable. \n Participo en distintas actividades y siempre estoy abierto a mejoras y posibilidades. \n Constante en el trabajo que realizo y para resolver un problema que resulte dificil");
+    this.perfilInfo.push("Nombre completo: Daniel Aparicio Quintanilla");
+    this.perfilInfo.push("Edad: 20 años");
+    this.perfilInfo.push("Locación: Cochabamba, Bolivia ");
+   }
 
   ngOnInit() {
   }
