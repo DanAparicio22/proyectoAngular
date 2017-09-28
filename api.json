@@ -1,0 +1,21 @@
+{
+    "actividades":[
+        {
+            "titulo" : "Proyecto hecho en C#, sistema de boletas de pago para empleados de una empresa.",
+            "enlace": "https://gitlab.com/Samuel_UCB/SisInfo"
+        },{
+            "titulo": "Proyecto pagina web de la carrera de ingeneria de sistemas, UCB.",
+            "enlace": "https://github.com/jorgechavezrnd/SisWeb117"
+        },{
+            "titulo": "Proyecto aplicacion web para fitness tracker, UCB.",
+            "enlace":"https://gitlab.com/DanAparicio22/BalanceFitnessTracker"
+        }
+    ],
+    "bloque":[
+        {
+            "imagen":"../assets/imagenes/fotoPerfil.jpg",
+            "nombre":"Daniel Aparicio"
+        }
+    ]
+}
+

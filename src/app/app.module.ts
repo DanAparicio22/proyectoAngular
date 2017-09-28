@@ -10,6 +10,7 @@ import { HabilidadesComponent } from './components/habilidades/habilidades.compo
 import { ActividadesComponent } from './components/actividades/actividades.component';
 import { PerfilComponent } from './components/perfil/perfil.component';
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
+import { HttpModule } from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ExperienciaComponent } from './components/experiencia/experiencia.compo
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
