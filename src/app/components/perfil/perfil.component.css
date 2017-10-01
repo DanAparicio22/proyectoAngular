@@ -1,0 +1,22 @@
+#titulo{
+    font-family: serif;
+    font-size: 42px;
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+#datos{
+    font-family: serif;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+table{
+    border: 4px solid white;
+    margin: auto;
+}
+#tabla{
+    width:50%;
+    background-color: #14A1F2;
+}

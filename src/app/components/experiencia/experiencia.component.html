@@ -1,5 +1,39 @@
-<p>Educacion:</p>
-<p *ngFor="let eduC of educacionC">{{eduC}}</p>
-<p> </p>
-<p> </p>
-<p *ngFor="let eduU of educacionU">{{eduU}}</p>
+<p id="educacion">Formación</p>
+<div>
+<div *ngFor="let eduC of educacionC">
+    <table id="tabla">
+            <tr>
+                <td>Institucion</td><td>{{eduC.Colegio}}</td>
+            </tr>
+            <tr>
+                <td>Inicio</td> <td>{{eduC.Inicio}}</td>
+            </tr>
+            <tr>
+                <td>Finalizacion</td><td>{{eduC.Finalizacion}}</td>    
+            </tr>
+            <tr>
+                <td>Lugar</td><td>{{eduC.Lugar}}</td>       
+            </tr>
+    </table>
+</div>
+<br>
+<div *ngFor="let eduU of educacionU">
+        <table id="tabla">
+                <tr>
+                    <td>Institucion</td><td>{{eduU.Universidad}}</td>
+                </tr>
+                <tr>
+                    <td>Inicio</td> <td>{{eduU.Inicio}}</td>
+                </tr>
+                <tr>
+                    <td>Finalizacion</td><td>{{eduU.Finalizacion}}</td>    
+                </tr>
+                <tr>
+                    <td>Lugar</td><td>{{eduU.Lugar}}</td>       
+                </tr>
+        </table>
+</div>
+</div>
+
+
+

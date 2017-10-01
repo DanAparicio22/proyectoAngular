@@ -1,8 +1,15 @@
-<p>Lenguajes:</p>
-<ul>
-<li *ngFor="let lenguaje of lenguajes">{{lenguaje}}</li>
-</ul>
-<p>IDE's: </p>
-<ul>
+<p id="titulo">Habilidades</p>
+<p id="ides">IDE's: </p>
+<ul id="ides">
     <li *ngFor="let IDE of IDES">{{IDE}}</li>
 </ul>
+<table id="tablalenguaje">
+    <tr>
+        <th>Lenguajes</th>
+        <th>Nivel de dominio</th>
+    </tr>
+    <tr *ngFor="let lenguaje of lenguajes">
+        <td >{{lenguaje.lenguaje}}</td>
+        <td>{{lenguaje.nivel}}</td>
+    </tr>
+</table>

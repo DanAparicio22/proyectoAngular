@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Http } from '@angular/http';
 @Component({
   selector: 'app-experiencia',
   templateUrl: './experiencia.component.html',
@@ -7,20 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExperienciaComponent implements OnInit {
 
-  private educacionC: any[];
-  private educacionU: any[];
-  constructor() { 
-    this.educacionC=[];
-    this.educacionC.push("Colegio Americano");
-    this.educacionC.push("2001 - 2014");
-    this.educacionC.push("Oruro, Bolivia");
-    this.educacionU=[];
-    this.educacionU.push("Universidad Católica Boliviana \"San Pablo\"");
-    this.educacionU.push("2015 - Actualidad");
-    this.educacionU.push("Cochabamba, Bolivia");
+  private educacionC: any = [];
+  private educacionU: any= [];
+  constructor(private http: Http) { 
   }
 
   ngOnInit() {
+    let url="http://localhost:3000/educacionC";
+    this.http.get(url).subscribe((response:any) => {
+      this.educacionC=JSON.parse(response._body);
+    });
+    let url2="http://localhost:3000/educacionU";
+    this.http.get(url2).subscribe((response:any) => {
+      this.educacionU=JSON.parse(response._body);
+    });
   }
 
 }

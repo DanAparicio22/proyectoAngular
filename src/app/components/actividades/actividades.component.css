@@ -1,0 +1,17 @@
+#titulo{
+    color:white;
+    font-size: 45px;
+    text-align: center;
+    font-family: serif;
+    font-style: italic;
+}
+#descripcion{
+    color:white;
+    font-size: 30px;
+    font-family: serif;
+}
+#enlaces{
+    color:white;
+    font-family: serif;
+    font-size: 20px;
+}

@@ -4,7 +4,7 @@
             "titulo" : "Proyecto hecho en C#, sistema de boletas de pago para empleados de una empresa.",
             "enlace": "https://gitlab.com/Samuel_UCB/SisInfo"
         },{
-            "titulo": "Proyecto pagina web de la carrera de ingeneria de sistemas, UCB.",
+            "titulo": "Proyecto pagina web de la carrera de ingenieria de sistemas, UCB.",
             "enlace": "https://github.com/jorgechavezrnd/SisWeb117"
         },{
             "titulo": "Proyecto aplicacion web para fitness tracker, UCB.",
@@ -16,6 +16,45 @@
             "imagen":"../assets/imagenes/fotoPerfil.jpg",
             "nombre":"Daniel Aparicio"
         }
-    ]
+    ],
+    "lenguajes":[
+        {
+            "lenguaje":"C++",
+            "nivel":"Intermedio"
+        },{
+            "lenguaje":"C#",
+            "nivel":"Basico"
+        },{
+            "lenguaje":"Java SE",
+            "nivel":"Intermedio"
+        },{
+            "lenguaje":"Ruby",
+            "nivel":"Basico"
+        },{
+            "lenguaje":"PHP",
+            "nivel":"Basico"
+        },{
+            "lenguaje":"Python",
+            "nivel":"Basico"
+        }
+    ],
+    "educacionC":[
+                {
+                    "Colegio":"Colegio Americano",
+                    "Inicio":"2001",
+                    "Finalizacion":"2014",
+                    "Lugar":"Oruro, Bolivia"
+                }
+            ],
+
+    "educacionU":[
+                {
+                    "Universidad":"Universidad Católica Boliviana \"San Pablo\"",
+                    "Inicio":"2015",
+                    "Finalizacion":"Actualidad",
+                    "Lugar":"Cochabamba, Bolivia"
+                }
+            ]
+
 }
 

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from "rxjs/Observable";
+import { Http } from '@angular/http';
 
 @Component({
   selector: 'habilidades',
@@ -8,17 +9,9 @@ import { Observable } from "rxjs/Observable";
 })
 export class HabilidadesComponent implements OnInit {
 
-  private lenguajes: any[];
-  private IDES:any[];
-  constructor() { 
-    this.lenguajes=[];
-    this.lenguajes.push("C++");
-    this.lenguajes.push("C#");
-    this.lenguajes.push("Java SE");
-    this.lenguajes.push("Ruby");
-    this.lenguajes.push("PHP");
-    this.lenguajes.push("Python");
-    this.IDES=[];
+  private lenguajes: any= [];
+  private IDES:any= [];
+  constructor(private http: Http) { 
     this.IDES.push("Visual Studio");
     this.IDES.push("IntellijIDEA");
     this.IDES.push("Netbeans");
@@ -26,7 +19,10 @@ export class HabilidadesComponent implements OnInit {
   }
 
   ngOnInit() {
-
+    let url="http://localhost:3000/lenguajes";
+    this.http.get(url).subscribe((response:any) => {
+      this.lenguajes=JSON.parse(response._body);
+    });
   }
 
 }
